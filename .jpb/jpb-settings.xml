@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JpaPluginProjectSettings">
+    <option name="accessModifier" value="PROTECTED" />
+    <option name="entityNameTemplate" />
+    <option name="tableNameTemplate" value="tab_${className.underscore().toLowerCase()}" />
+    <option name="columnNameTemplate" value="col_${fieldName.underscore().toLowerCase()}" />
+    <option name="isLombokToString" value="true" />
+    <option name="isLombokBuilder" value="true" />
+    <option name="isLombokAllArgsConstructor" value="true" />
+    <option name="isLombokNoArgsConstructor" value="true" />
+    <option name="scaffoldingLanguage" />
+  </component>
+</project>

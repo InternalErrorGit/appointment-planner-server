@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1">
+  <zoom_level>17</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>374</x>
+      <y>51</y>
+      <w>357</w>
+      <h>408</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Abstract&gt;&gt;
+Appointment
+--
+name: String
+description: String
+date: Date
+duration: String
+weekly: boolean
+monthly: boolean
+yearly: boolean
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>748</x>
+      <y>51</y>
+      <w>357</w>
+      <h>221</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Abstract&gt;&gt;
+DatabaseEntity
+--
+id: Long
+create_date: Date
+update_date: Date
+create_user: Long
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>0</x>
+      <y>51</y>
+      <w>357</w>
+      <h>306</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Abstract&gt;&gt;
+User
+--
+username: String
+firstname: String
+lastname: String
+email: String
+hashed_password: String
+request_change_password: String
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>0</x>
+      <y>374</y>
+      <w>357</w>
+      <h>221</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+AppointmentMember
+--
+user_id: Long
+appointment_id: Long
+status: boolean
+comment: String</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
